@@ -12,7 +12,35 @@
 		FC84B66C1EF832C900C1864E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC84B66A1EF832C900C1864E /* Main.storyboard */; };
 		FC84B66E1EF832C900C1864E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC84B66D1EF832C900C1864E /* Assets.xcassets */; };
 		FC84B6711EF832C900C1864E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC84B66F1EF832C900C1864E /* LaunchScreen.storyboard */; };
+		FC84B67F1EF832FB00C1864E /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC84B67E1EF832FB00C1864E /* KeyboardViewController.swift */; };
+		FC84B6831EF832FB00C1864E /* myKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FC84B67C1EF832FB00C1864E /* myKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FC84B6891EF8357A00C1864E /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = FC84B6881EF8357A00C1864E /* heart.png */; };
+		FC84B68A1EF8357A00C1864E /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = FC84B6881EF8357A00C1864E /* heart.png */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC84B6811EF832FB00C1864E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC84B65B1EF832C900C1864E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC84B67B1EF832FB00C1864E;
+			remoteInfo = myKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FC84B6871EF832FB00C1864E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FC84B6831EF832FB00C1864E /* myKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FC84B6631EF832C900C1864E /* Customized Key.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Customized Key.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +50,21 @@
 		FC84B66D1EF832C900C1864E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC84B6701EF832C900C1864E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC84B6721EF832C900C1864E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC84B67C1EF832FB00C1864E /* myKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = myKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC84B67E1EF832FB00C1864E /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		FC84B6801EF832FB00C1864E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC84B6881EF8357A00C1864E /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = heart.png; path = ../../heart.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FC84B6601EF832C900C1864E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC84B6791EF832FB00C1864E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				FC84B6651EF832C900C1864E /* Customized Key */,
+				FC84B67D1EF832FB00C1864E /* myKeyboard */,
 				FC84B6641EF832C900C1864E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				FC84B6631EF832C900C1864E /* Customized Key.app */,
+				FC84B67C1EF832FB00C1864E /* myKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +95,7 @@
 		FC84B6651EF832C900C1864E /* Customized Key */ = {
 			isa = PBXGroup;
 			children = (
+				FC84B6881EF8357A00C1864E /* heart.png */,
 				FC84B6661EF832C900C1864E /* AppDelegate.swift */,
 				FC84B6681EF832C900C1864E /* ViewController.swift */,
 				FC84B66A1EF832C900C1864E /* Main.storyboard */,
@@ -62,6 +104,15 @@
 				FC84B6721EF832C900C1864E /* Info.plist */,
 			);
 			path = "Customized Key";
+			sourceTree = "<group>";
+		};
+		FC84B67D1EF832FB00C1864E /* myKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FC84B67E1EF832FB00C1864E /* KeyboardViewController.swift */,
+				FC84B6801EF832FB00C1864E /* Info.plist */,
+			);
+			path = myKeyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +125,34 @@
 				FC84B65F1EF832C900C1864E /* Sources */,
 				FC84B6601EF832C900C1864E /* Frameworks */,
 				FC84B6611EF832C900C1864E /* Resources */,
+				FC84B6871EF832FB00C1864E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FC84B6821EF832FB00C1864E /* PBXTargetDependency */,
 			);
 			name = "Customized Key";
 			productName = "Customized Key";
 			productReference = FC84B6631EF832C900C1864E /* Customized Key.app */;
 			productType = "com.apple.product-type.application";
+		};
+		FC84B67B1EF832FB00C1864E /* myKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC84B6841EF832FB00C1864E /* Build configuration list for PBXNativeTarget "myKeyboard" */;
+			buildPhases = (
+				FC84B6781EF832FB00C1864E /* Sources */,
+				FC84B6791EF832FB00C1864E /* Frameworks */,
+				FC84B67A1EF832FB00C1864E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = myKeyboard;
+			productName = myKeyboard;
+			productReference = FC84B67C1EF832FB00C1864E /* myKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +165,9 @@
 				ORGANIZATIONNAME = "Atil Samancioglu";
 				TargetAttributes = {
 					FC84B6621EF832C900C1864E = {
+						CreatedOnToolsVersion = 9.0;
+					};
+					FC84B67B1EF832FB00C1864E = {
 						CreatedOnToolsVersion = 9.0;
 					};
 				};
@@ -113,6 +186,7 @@
 			projectRoot = "";
 			targets = (
 				FC84B6621EF832C900C1864E /* Customized Key */,
+				FC84B67B1EF832FB00C1864E /* myKeyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -122,9 +196,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC84B6891EF8357A00C1864E /* heart.png in Resources */,
 				FC84B6711EF832C900C1864E /* LaunchScreen.storyboard in Resources */,
 				FC84B66E1EF832C900C1864E /* Assets.xcassets in Resources */,
 				FC84B66C1EF832C900C1864E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC84B67A1EF832FB00C1864E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC84B68A1EF8357A00C1864E /* heart.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +223,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FC84B6781EF832FB00C1864E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC84B67F1EF832FB00C1864E /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC84B6821EF832FB00C1864E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC84B67B1EF832FB00C1864E /* myKeyboard */;
+			targetProxy = FC84B6811EF832FB00C1864E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FC84B66A1EF832C900C1864E /* Main.storyboard */ = {
@@ -268,6 +367,7 @@
 		FC84B6761EF832C900C1864E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7SH627DBA4;
 				INFOPLIST_FILE = "Customized Key/Info.plist";
@@ -282,12 +382,41 @@
 		FC84B6771EF832C900C1864E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7SH627DBA4;
 				INFOPLIST_FILE = "Customized Key/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.atilsamancioglu.Customized-Key";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FC84B6851EF832FB00C1864E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7SH627DBA4;
+				INFOPLIST_FILE = myKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.atilsamancioglu.Customized-Key.myKeyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC84B6861EF832FB00C1864E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7SH627DBA4;
+				INFOPLIST_FILE = myKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.atilsamancioglu.Customized-Key.myKeyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -310,6 +439,14 @@
 			buildConfigurations = (
 				FC84B6761EF832C900C1864E /* Debug */,
 				FC84B6771EF832C900C1864E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FC84B6841EF832FB00C1864E /* Build configuration list for PBXNativeTarget "myKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC84B6851EF832FB00C1864E /* Debug */,
+				FC84B6861EF832FB00C1864E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

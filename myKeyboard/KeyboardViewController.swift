@@ -21,6 +21,15 @@ class KeyboardViewController: UIInputViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //heart
+        
+        let myHeartButton = UIButton(type: UIButtonType.system)
+        myHeartButton.frame = CGRect(x: 150, y: 50, width: 100, height: 120)
+        myHeartButton.setBackgroundImage(UIImage(named: "heart.png"), for: UIControlState.normal)
+        myHeartButton.addTarget(self, action: #selector(KeyboardViewController.buttonTapped), for: UIControlEvents.touchUpInside)
+        self.view.addSubview(myHeartButton)
+    
+        
         // Perform custom UI setup here
         self.nextKeyboardButton = UIButton(type: .system)
         
@@ -34,6 +43,13 @@ class KeyboardViewController: UIInputViewController {
         
         self.nextKeyboardButton.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
         self.nextKeyboardButton.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
+    }
+    
+    @objc func buttonTapped() {
+        
+        let textProxy = textDocumentProxy as UITextDocumentProxy
+        textProxy.insertText("I Love You")
+        
     }
     
     override func didReceiveMemoryWarning() {
